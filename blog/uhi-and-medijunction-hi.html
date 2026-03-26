@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="hi" class="theme-light">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../assets/css/animate.min.css">
+        <link rel="stylesheet" href="../assets/css/meanmenu.css">
+        <link rel="stylesheet" href="../assets/css/fontawesome.min.css">
+        <link rel="stylesheet" href="../assets/css/flaticon.css">
+        <link rel="stylesheet" href="../assets/css/nice-select.min.css">
+        <link rel="stylesheet" href="../assets/css/odometer.min.css">
+        <link rel="stylesheet" href="../assets/css/magnific-popup.min.css">
+        <link rel="stylesheet" href="../assets/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="../assets/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <link rel="stylesheet" href="../assets/css/dark.css">
+		<link rel="stylesheet" href="../assets/css/responsive.css">
+		<link rel="stylesheet" href="../assets/css/custom.css">
+
+		<title>UHI क्या है और MediJunction इसके साथ कैसे जुड़ता है - Medijunction ब्लॉग</title>
+        <meta name="description" content="जानें कि भारत का Unified Health Interface (UHI) कैसे स्वास्थ्य सेवा को बदल रहा है, और MediJunction का ABDM-अनुपालित प्लेटफॉर्म UHI के साथ कैसे जुड़ता है।">
+        <meta name="keywords" content="UHI, Unified Health Interface, ABDM, ABHA, MediJunction, डिजिटल स्वास्थ्य भारत, आयुष्मान भारत, FHIR R4, टेलीमेडिसिन भारत, ग्रामीण स्वास्थ्य सेवा">
+        <meta property="og:title" content="UHI क्या है और MediJunction इसके साथ कैसे जुड़ता है">
+        <meta property="og:description" content="भारत का UHI स्वास्थ्य सेवा के लिए वही कर रहा है जो UPI ने पेमेंट्स के लिए किया। जानें MediJunction इसके साथ कैसे जुड़ता है।">
+        <meta property="og:type" content="article">
+
+        <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+
+        <style>
+            .blog-details-content { padding: 0 15px; }
+            .blog-details-content h2 { color: #0046c0; font-size: 24px; margin: 35px 0 15px; padding-bottom: 8px; border-bottom: 2px solid #e0f0ff; }
+            .blog-details-content h3 { font-size: 20px; margin: 25px 0 10px; color: #0f123b; }
+            .blog-details-content p { font-size: 16px; line-height: 1.8; margin-bottom: 16px; color: #555; }
+            .blog-details-content ul, .blog-details-content ol { margin: 0 0 20px 20px; color: #555; }
+            .blog-details-content li { margin-bottom: 8px; line-height: 1.7; }
+            .blog-details-content blockquote { border-left: 4px solid #0046c0; padding: 15px 20px; margin: 20px 0; background: #f8f9fa; border-radius: 0 8px 8px 0; font-style: italic; color: #333; }
+            .highlight-box { background: #e8f4fd; border-left: 4px solid #0046c0; padding: 18px 22px; border-radius: 0 10px 10px 0; margin: 20px 0; font-size: 15px; }
+            .highlight-box strong { color: #0046c0; }
+            .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 14px; margin: 20px 0; }
+            .stat-card { background: #f0f7ff; border-radius: 10px; padding: 18px; text-align: center; }
+            .stat-card .number { font-size: 28px; font-weight: bold; color: #0046c0; }
+            .stat-card .label { font-size: 13px; color: #666; margin-top: 4px; }
+            .blog-table { width: 100%; border-collapse: collapse; margin: 18px 0; font-size: 15px; }
+            .blog-table th { background: #0046c0; color: white; padding: 10px 14px; text-align: left; }
+            .blog-table td { padding: 10px 14px; border-bottom: 1px solid #e0e0e0; }
+            .blog-table tr:nth-child(even) { background: #f8f9fa; }
+            .flow-step { display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px; }
+            .flow-step .step-num { background: #0046c0; color: white; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0; font-size: 14px; }
+            .flow-step .step-text { font-size: 15px; color: #555; padding-top: 4px; }
+            .cta-box { background: linear-gradient(135deg, #0046c0, #0077b6); color: white; padding: 28px; border-radius: 14px; text-align: center; margin: 35px 0; }
+            .cta-box h3 { color: white; margin-bottom: 10px; }
+            .cta-box p { color: rgba(255,255,255,0.9); }
+            .cta-box a { display: inline-block; background: white; color: #0046c0; padding: 10px 24px; border-radius: 6px; text-decoration: none; font-weight: bold; margin-top: 10px; }
+            .blog-tags span { display: inline-block; background: #e8f4fd; color: #0046c0; padding: 3px 10px; border-radius: 14px; font-size: 12px; margin: 3px; }
+            .lang-switch { margin-bottom: 15px; }
+            .lang-switch a { color: #0046c0; font-weight: 600; text-decoration: none; }
+        </style>
+    </head>
+    <body>
+
+        <div class="preloader">
+            <div class="spinner"></div>
+        </div>
+
+        <!-- Start Header Area -->
+        <header class="header-area">
+            <div class="top-header">
+                <div class="container">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-lg-6">
+                            <ul class="top-list">
+                                <li><i class='flaticon-clock'></i> Mon-Fri 09:00-18:00</li>
+                                <li><i class='flaticon-phone-call'></i> <a href="tel:+911204131828">Call Us: +91-120-413-1828</a></li>
+                                <li><i class='flaticon-paper-plane'></i> <a href="mailto:info@medijunction.co.in">info@medijunction.co.in</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6">
+                            <ul class="top-social">
+                               <li><a href="https://www.facebook.com/" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="https://twitter.com/" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="https://www.linkedin.com/" target="_blank" class="pinterest"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="https://www.instagram.com/" class="instagram"><i class="fab fa-instagram"></i></a></li>
+                                <li style="margin-left: 15px; display: flex; align-items: center;">
+                                    <a href="uhi-and-medijunction.html" style="color: #fff; font-weight: 600; font-size: 13px;">EN</a>
+                                    <span style="color: #fff; margin: 0 5px;">|</span>
+                                    <a href="uhi-and-medijunction-hi.html" style="color: #ffc107; font-weight: 600; font-size: 13px;">&#x0939;&#x093F;&#x0902;</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navbar-area navbar-two">
+                <div class="main-responsive-nav">
+                    <div class="container">
+                        <div class="main-responsive-menu">
+                            <div class="logo">
+                                <a href="../index.html">
+                                <img src="../assets/img/logo.png" class="black-logo" alt="Medijunction">
+                                <img src="../assets/img/logo-2.png" class="white-logo" alt="Medijunction">
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main-navbar">
+                    <div class="container">
+                        <nav class="navbar navbar-expand-md navbar-light">
+                            <a href="../index.html">
+                                <img src="../assets/img/logo.png" class="black-logo" alt="Medijunction">
+                                <img src="../assets/img/logo-2.png" class="white-logo" alt="Medijunction">
+                            </a>
+
+                            <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+                                    <li class="nav-item"><a href="../about.html" class="nav-link">About</a></li>
+                                    <li class="nav-item"><a href="../services.html" class="nav-link">Services</a></li>
+                                    <li class="nav-item"><a href="../solution.html" class="nav-link">Programs</a></li>
+                                    <li class="nav-item"><a href="../blog.html" class="nav-link active">Blog</a></li>
+                                    <li class="nav-item"><a href="../contact.html" class="nav-link">Contact</a></li>
+                                </ul>
+                                <div class="others-options">
+                                    <a href="https://gchc.medijunction.co.in" class="default-btn-two" target="_blank">GCHC Platform<span></span></a>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- End Header Area -->
+
+        <!-- Start Page Title Area -->
+        <div class="page-title-area item-bg-2">
+            <div class="d-table">
+                <div class="d-table-cell">
+                    <div class="container">
+                        <div class="page-title-content">
+                            <h2>UHI क्या है और MediJunction इसके साथ कैसे जुड़ता है</h2>
+                            <ul>
+                                <li><a href="../index.html">Home</a></li>
+                                <li><a href="../blog.html">Blog</a></li>
+                                <li>UHI और MediJunction</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Page Title Area -->
+
+        <!-- Start Blog Details Area -->
+        <section class="blog-details-area ptb-100">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="blog-details-content">
+
+                            <div class="lang-switch">
+                                <a href="uhi-and-medijunction.html"><i class="fa fa-language"></i> Read in English (English में पढ़ें)</a>
+                            </div>
+
+                            <p style="font-size: 13px; color: #888; margin-bottom: 5px;">मार्च 16, 2026 &bull; 8 मिनट पढ़ने का समय &bull; डिजिटल स्वास्थ्य</p>
+
+                            <p style="font-size: 18px; font-style: italic; color: #333; margin-bottom: 25px;">भारत का Unified Health Interface स्वास्थ्य सेवा के लिए वही कर रहा है जो UPI ने पेमेंट्स के लिए किया। यहाँ जानें सब कुछ।</p>
+
+                            <p>कल्पना कीजिए कि आप डॉक्टर की अपॉइंटमेंट उतनी ही आसानी से बुक कर सकें जितनी आसानी से UPI से पैसे भेजते हैं। कल्पना कीजिए कि आपके मेडिकल रिकॉर्ड &mdash; प्रिस्क्रिप्शन, लैब रिपोर्ट, डायग्नोसिस &mdash; एक अस्पताल से दूसरे अस्पताल, किसी भी ऐप पर, किसी भी शहर में आपके साथ चलें।</p>
+
+                            <p>यह कोई दूर के भविष्य का सपना नहीं है। यह वही है जो भारत का <strong>Unified Health Interface (UHI)</strong> अभी बना रहा है। और MediJunction में, हम इस क्रांति का हिस्सा होने पर गर्व महसूस करते हैं।</p>
+
+                            <h2>वह स्वास्थ्य समस्या जिसे UHI हल करता है</h2>
+
+                            <p>भारत की स्वास्थ्य सेवा प्रणाली, अपने विशाल पैमाने और प्रतिभा के बावजूद, एक मूलभूत समस्या से ग्रस्त है: <strong>विखंडन (fragmentation)</strong>।</p>
+
+                            <p>आज, अगर आप दिल्ली के हॉस्पिटल A में जाते हैं और फिर मुंबई के हॉस्पिटल B में फॉलो-अप की ज़रूरत होती है, तो आपके स्वास्थ्य रिकॉर्ड आपके साथ नहीं जाते। आप कागज़ की फाइलें लेकर चलते हैं, टेस्ट दोबारा करवाते हैं।</p>
+
+                            <p>ग्रामीण क्षेत्रों में रहने वाले 60 करोड़+ भारतीयों के लिए समस्या और भी गंभीर है। विशेषज्ञों और बुनियादी स्वास्थ्य रिकॉर्ड तक पहुँच कई लोगों के लिए एक दूर का सपना है।</p>
+
+                            <h2>UHI क्या है?</h2>
+
+                            <p><strong>Unified Health Interface (UHI)</strong> एक ओपन प्रोटोकॉल नेटवर्क है जिसे <strong>आयुष्मान भारत डिजिटल मिशन (ABDM)</strong> के तहत राष्ट्रीय स्वास्थ्य प्राधिकरण (NHA) द्वारा विकसित किया गया है। इसे एक डिजिटल हाईवे की तरह सोचें जो मरीजों, डॉक्टरों, अस्पतालों, लैब, फार्मेसियों और स्वास्थ्य ऐप्स को एक सहज इकोसिस्टम में जोड़ता है।</p>
+
+                            <div class="highlight-box">
+                                <strong>UPI की तरह समझें:</strong> जैसे UPI आपको किसी भी बैंक के ऐप से किसी भी दूसरे बैंक के खाते में पैसे भेजने देता है, UHI आपको किसी भी हेल्थ ऐप से किसी भी स्वास्थ्य सेवा का उपयोग करने देता है। इकोसिस्टम खुला और इंटरऑपरेबल है।
+                            </div>
+
+                            <h2>ABDM इकोसिस्टम</h2>
+
+                            <table class="blog-table">
+                                <tr><th>बिल्डिंग ब्लॉक</th><th>क्या करता है</th></tr>
+                                <tr><td><strong>ABHA (हेल्थ ID)</strong></td><td>हर भारतीय नागरिक के लिए एक अद्वितीय 14-अंकों की स्वास्थ्य ID</td></tr>
+                                <tr><td><strong>Health Facility Registry</strong></td><td>सभी अस्पतालों, क्लीनिकों, लैब, फार्मेसियों का डेटाबेस</td></tr>
+                                <tr><td><strong>Healthcare Professionals Registry</strong></td><td>सभी डॉक्टरों और स्वास्थ्य पेशेवरों की सत्यापित रजिस्ट्री</td></tr>
+                                <tr><td><strong>Health Information Exchange</strong></td><td>सुरक्षित, सहमति-आधारित स्वास्थ्य रिकॉर्ड साझाकरण</td></tr>
+                                <tr><td><strong>Unified Health Interface</strong></td><td>स्वास्थ्य सेवाओं की खोज और वितरण के लिए ओपन प्रोटोकॉल</td></tr>
+                            </table>
+
+                            <h2>ABDM: आँकड़ों में</h2>
+
+                            <div class="stat-grid">
+                                <div class="stat-card">
+                                    <div class="number">76 करोड़+</div>
+                                    <div class="label">ABHA हेल्थ ID बनाई गईं</div>
+                                </div>
+                                <div class="stat-card">
+                                    <div class="number">49 करोड़+</div>
+                                    <div class="label">स्वास्थ्य रिकॉर्ड लिंक किए गए</div>
+                                </div>
+                                <div class="stat-card">
+                                    <div class="number">3.63 लाख+</div>
+                                    <div class="label">स्वास्थ्य सुविधाएं रजिस्टर्ड</div>
+                                </div>
+                                <div class="stat-card">
+                                    <div class="number">5.64 लाख+</div>
+                                    <div class="label">स्वास्थ्य पेशेवर नामांकित</div>
+                                </div>
+                            </div>
+
+                            <h2>UHI कैसे काम करता है</h2>
+
+                            <div class="flow-step">
+                                <div class="step-num">1</div>
+                                <div class="step-text"><strong>खोज (Discovery):</strong> मरीज सेवा खोजता है &mdash; "मेरे पास कार्डियोलॉजिस्ट" या "घर पर ब्लड टेस्ट"। खोज सेवा, प्रदाता, लक्षण या विशेषता के आधार पर हो सकती है।</div>
+                            </div>
+                            <div class="flow-step">
+                                <div class="step-num">2</div>
+                                <div class="step-text"><strong>प्रसारण (Broadcasting):</strong> ऐप अनुरोध को UHI Gateway पर भेजता है, जो इसे सभी पंजीकृत Health Service Providers को प्रसारित करता है।</div>
+                            </div>
+                            <div class="flow-step">
+                                <div class="step-num">3</div>
+                                <div class="step-text"><strong>प्रतिक्रिया (Response):</strong> प्रदाता अपनी सेवा विवरण, उपलब्धता, मूल्य के साथ जवाब देते हैं। कई प्रदाता जवाब दे सकते हैं।</div>
+                            </div>
+                            <div class="flow-step">
+                                <div class="step-num">4</div>
+                                <div class="step-text"><strong>चयन (Selection):</strong> मरीज अपनी ज़रूरतों के अनुसार सबसे उपयुक्त प्रदाता का चयन करता है।</div>
+                            </div>
+                            <div class="flow-step">
+                                <div class="step-num">5</div>
+                                <div class="step-text"><strong>पूर्ति (Fulfilment):</strong> सेवा प्रदान की जाती है और सभी रिकॉर्ड मरीज की ABHA ID से जुड़ जाते हैं।</div>
+                            </div>
+
+                            <h2>UHI द्वारा सक्षम सेवाएं</h2>
+
+                            <ul>
+                                <li><strong>टेलीकंसल्टेशन</strong> &mdash; विभिन्न प्लेटफॉर्मों पर डॉक्टरों के साथ वीडियो परामर्श</li>
+                                <li><strong>अपॉइंटमेंट बुकिंग</strong> &mdash; किसी भी पंजीकृत सुविधा में बुक करें</li>
+                                <li><strong>सेवा खोज</strong> &mdash; विशेषता या स्थान के आधार पर डॉक्टर, लैब, फार्मेसी खोजें</li>
+                                <li><strong>डायग्नोस्टिक सेवाएं</strong> &mdash; घर पर सैंपल कलेक्शन सहित लैब टेस्ट</li>
+                                <li><strong>फार्मेसी सेवाएं</strong> &mdash; डिजिटल प्रिस्क्रिप्शन और दवा ऑर्डर</li>
+                                <li><strong>एम्बुलेंस और ब्लड बैंक सेवाएं</strong> &mdash; आपातकालीन बुकिंग</li>
+                                <li><strong>अस्पताल बेड उपलब्धता</strong> &mdash; सुविधाओं में रियल-टाइम स्थिति</li>
+                            </ul>
+
+                            <h2>MediJunction UHI के साथ कैसे जुड़ता है</h2>
+
+                            <p>MediJunction में, हमने अपने पूरे आर्किटेक्चर को <strong>पहले दिन से UHI-नेटिव</strong> डिज़ाइन किया है।</p>
+
+                            <h3>1. ABHA ID केंद्र में</h3>
+                            <p>हर मरीज की पहचान उनकी ABHA ID से होती है। स्वास्थ्य रिकॉर्ड &mdash; परामर्श, प्रिस्क्रिप्शन, लैब रिपोर्ट &mdash; सभी एक ही पोर्टेबल डिजिटल पहचान से जुड़े हैं।</p>
+
+                            <h3>2. FHIR R4 स्वास्थ्य रिकॉर्ड</h3>
+                            <p>हम स्वास्थ्य रिकॉर्ड FHIR R4 बंडल के रूप में बनाते हैं &mdash; ABDM द्वारा अनिवार्य अंतर्राष्ट्रीय मानक &mdash; जो किसी भी ABDM-अनुपालित सिस्टम के साथ इंटरऑपरेबिलिटी सुनिश्चित करता है।</p>
+
+                            <h3>3. स्वास्थ्य सूचना विनिमय</h3>
+                            <p>ABDM के HIE-CM के माध्यम से, MediJunction किसी भी प्रदाता के बीच सहमति-आधारित स्वास्थ्य रिकॉर्ड साझाकरण को सक्षम बनाता है।</p>
+
+                            <h3>4. UHI के माध्यम से टेलीकंसल्टेशन</h3>
+                            <p>हमारी टेलीकंसल्टेशन सेवा ग्रामीण मरीजों को विशेषज्ञों से जोड़ती है। UHI के माध्यम से, ये परामर्श किसी भी UHI-सक्षम ऐप से खोजे जा सकते हैं।</p>
+
+                            <h3>5. AI-सहायता प्राप्त ट्राइएज</h3>
+                            <p>हमारी AI-संचालित ट्राइएज प्रणाली सामुदायिक स्वास्थ्य कार्यकर्ताओं को उच्च-जोखिम मरीजों की पहचान करने में मदद करती है। परिणाम ABDM-अनुपालित रिकॉर्ड के रूप में ABHA ID से जुड़े संग्रहीत होते हैं।</p>
+
+                            <h3>6. ऑफलाइन-फर्स्ट, ABDM-रेडी</h3>
+                            <p>हमारा PWA बिना इंटरनेट के काम करता है। स्वास्थ्य रिकॉर्ड FHIR R4 मानकों से स्थानीय रूप से बनाए जाते हैं और कनेक्टिविटी उपलब्ध होने पर ABDM से सिंक होते हैं।</p>
+
+                            <div class="highlight-box">
+                                <strong>यह क्यों मायने रखता है:</strong> बिना मोबाइल सिग्नल वाले गाँव में एक सामुदायिक स्वास्थ्य कार्यकर्ता मरीजों की स्क्रीनिंग कर सकती है, डिजिटल स्वास्थ्य रिकॉर्ड बना सकती है, और AI-सहायता प्राप्त ट्राइएज कर सकती है &mdash; सब ऑफलाइन। जब वह कनेक्टिविटी ज़ोन में पहुँचती है, तो सब कुछ स्वचालित रूप से ABDM नेटवर्क से सिंक हो जाता है।
+                            </div>
+
+                            <h2>UHI क्यों मायने रखता है</h2>
+
+                            <h3>मरीजों के लिए</h3>
+                            <ul>
+                                <li>कागज़ी फाइलों से मुक्ति &mdash; आपकी स्वास्थ्य हिस्ट्री डिजिटल और पोर्टेबल</li>
+                                <li>विभिन्न प्लेटफॉर्मों पर डॉक्टरों, सेवाओं और कीमतों की तुलना करें</li>
+                                <li>आपके रिकॉर्ड किसी भी अस्पताल या ऐप से आपके साथ चलते हैं</li>
+                                <li>टेलीकंसल्टेशन वहाँ पहुँचता है जहाँ भौतिक ढाँचा नहीं पहुँच सकता</li>
+                            </ul>
+
+                            <h3>स्वास्थ्य सेवा प्रदाताओं के लिए</h3>
+                            <ul>
+                                <li>पूरे UHI नेटवर्क पर सेवाएं खोजने योग्य</li>
+                                <li>पूर्ण रोगी इतिहास (सहमति के साथ) तक पहुँच</li>
+                                <li>डिजिटल रिकॉर्ड, प्रिस्क्रिप्शन, और बिलिंग</li>
+                                <li>सभी ABDM-अनुपालित सिस्टम के साथ सहज इंटरऑपरेबिलिटी</li>
+                            </ul>
+
+                            <h2>UHI के साथ शुरुआत</h2>
+
+                            <ol>
+                                <li><strong>ABDM पर रजिस्टर करें</strong> &mdash; अपनी सुविधा को Health Facility Registry पर <a href="https://facility.abdm.gov.in" target="_blank">facility.abdm.gov.in</a> पर सूचीबद्ध करें</li>
+                                <li><strong>ABHA ID सक्षम करें</strong> &mdash; सभी मरीजों के लिए ABHA ID बनाना और स्वीकार करना शुरू करें</li>
+                                <li><strong>ABDM-अनुपालित सॉफ्टवेयर अपनाएं</strong> &mdash; FHIR R4 और UHI प्रोटोकॉल का समर्थन करने वाली प्रणाली का उपयोग करें</li>
+                                <li><strong>अपने स्टाफ को प्रशिक्षित करें</strong> &mdash; सुनिश्चित करें कि सभी डिजिटल स्वास्थ्य रिकॉर्ड समझते हैं</li>
+                                <li><strong>UHI पर लाइव जाएं</strong> &mdash; HSPA के रूप में रजिस्टर करें ताकि आपकी सेवाएं खोजने योग्य बनें</li>
+                            </ol>
+
+                            <div class="cta-box">
+                                <h3>भारत की डिजिटल स्वास्थ्य क्रांति में शामिल होने के लिए तैयार हैं?</h3>
+                                <p>MediJunction का प्लेटफॉर्म ABDM-अनुपालित, UHI-नेटिव है, और हर आकार के स्वास्थ्य सेवा प्रदाताओं के लिए बनाया गया है।</p>
+                                <a href="../contact.html">संपर्क करें</a>
+                            </div>
+
+                            <h2>आगे का रास्ता</h2>
+
+                            <p>76 करोड़+ ABHA ID और लगभग 50 करोड़ लिंक किए गए स्वास्थ्य रिकॉर्ड के साथ, नींव मज़बूत है। जैसे-जैसे UHI परिपक्व होता है, हम AI-संचालित स्वास्थ्य अंतर्दृष्टि, बीमा एकीकरण, अनुसंधान त्वरण, और FHIR मानकों के माध्यम से वैश्विक इंटरऑपरेबिलिटी देखेंगे।</p>
+
+                            <blockquote>
+                                "सवाल यह नहीं है कि भारतीय स्वास्थ्य सेवा डिजिटल होगी या नहीं। सवाल यह है कि कौन तैयार होगा। MediJunction में, हम तैयार हैं।"
+                            </blockquote>
+
+                            <div class="blog-tags" style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #eee;">
+                                <strong>टैग:</strong>
+                                <span>UHI</span> <span>ABDM</span> <span>ABHA</span> <span>आयुष्मान भारत</span>
+                                <span>डिजिटल स्वास्थ्य</span> <span>FHIR R4</span> <span>टेलीकंसल्टेशन</span>
+                                <span>ग्रामीण स्वास्थ्य सेवा</span> <span>MediJunction</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Sidebar -->
+                    <div class="col-lg-4">
+                        <div class="widget-area">
+                            <div class="widget widget_categories" style="background: #f8f9fa; padding: 25px; border-radius: 10px; margin-bottom: 25px;">
+                                <h3 style="margin-bottom: 15px;">MediJunction के बारे में</h3>
+                                <p style="font-size: 14px; color: #666; line-height: 1.7;">भारत का अगली पीढ़ी का ABDM-अनुपालित डिजिटल हेल्थ प्लेटफॉर्म। हर किसी के लिए स्मार्ट हेल्थकेयर।</p>
+                                <a href="../about.html" style="color: #0046c0; font-weight: 600; font-size: 14px;">और जानें &rarr;</a>
+                            </div>
+
+                            <div class="widget widget_categories" style="background: #f8f9fa; padding: 25px; border-radius: 10px; margin-bottom: 25px;">
+                                <h3 style="margin-bottom: 15px;">उपयोगी लिंक</h3>
+                                <ul style="list-style: none; padding: 0; margin: 0;">
+                                    <li style="margin-bottom: 10px;"><a href="https://abha.abdm.gov.in" target="_blank" style="color: #0046c0;">अपनी ABHA ID बनाएं</a></li>
+                                    <li style="margin-bottom: 10px;"><a href="https://abdm.gov.in/uhi" target="_blank" style="color: #0046c0;">UHI आधिकारिक पेज (NHA)</a></li>
+                                    <li style="margin-bottom: 10px;"><a href="https://facility.abdm.gov.in" target="_blank" style="color: #0046c0;">Health Facility Registry</a></li>
+                                    <li style="margin-bottom: 10px;"><a href="../services.html" style="color: #0046c0;">MediJunction सेवाएं</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="widget widget_categories" style="background: #e8f4fd; padding: 25px; border-radius: 10px;">
+                                <h3 style="margin-bottom: 15px;">और लेख</h3>
+                                <ul style="list-style: none; padding: 0; margin: 0; font-size: 14px;">
+                                    <li style="margin-bottom: 10px;"><a href="abdm-compliance-hi.html" style="color: #0046c0;">स्वास्थ्य सेवा प्रदाताओं के लिए ABDM अनुपालन चेकलिस्ट</a></li>
+                                    <li style="margin-bottom: 10px;"><a href="ai-triage-rural-healthcare-hi.html" style="color: #0046c0;">AI ट्राइएज कैसे ग्रामीण स्वास्थ्य सेवा को बदल रहा है</a></li>
+                                    <li style="color: #555;">डिजिटल स्वास्थ्य रिकॉर्ड: ABHA ID की व्याख्या (जल्द आ रहा है)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Blog Details Area -->
+
+        <!-- Start Footer Area -->
+        <section class="footer-area pt-100 pb-70">
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single-footer-widget">
+                            <h3>Medijunction</h3>
+                            <p>Medijunction Smart Healthcare Private Limited builds multi-tenant digital health platforms to bring quality primary care to underserved communities across India.</p>
+                            <ul class="footer-social">
+                                <li><a href="https://www.facebook.com/" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="https://twitter.com/" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="https://www.linkedin.com/" target="_blank" class="pinterest"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="https://www.instagram.com/" class="instagram"><i class="fab fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single-footer-widget pl-5">
+                            <h3>Programs</h3>
+                            <ul class="footer-quick-links">
+                                <li><a href="https://gchc.medijunction.co.in" target="_blank">GCHC</a></li>
+                                <li><a href="https://medistudent.medijunction.co.in" target="_blank">MediStudent</a></li>
+                                <li><a href="https://ruralhealth.medijunction.co.in" target="_blank">Rural Health Connect</a></li>
+                                <li><a href="https://wellness.medijunction.co.in" target="_blank">Corporate Wellness</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single-footer-widget pl-5">
+                            <h3>Quick Links</h3>
+                            <ul class="footer-quick-links">
+                                <li><a href="../index.html">Home</a></li>
+                                <li><a href="../about.html">About</a></li>
+                                <li><a href="../services.html">Services</a></li>
+                                <li><a href="../blog.html">Blog</a></li>
+                                <li><a href="../contact.html">Contact</a></li>
+                                <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single-footer-widget">
+                            <h3>Contact</h3>
+                            <div class="footer-info-contact"><i class="flaticon-call"></i><h3>Phone</h3><span><a href="tel:+911204131828">+91-120-413-1828</a></span></div>
+                            <div class="footer-info-contact"><i class="flaticon-email"></i><h3>Email</h3><span><a href="mailto:info@medijunction.co.in">info@medijunction.co.in</a></span></div>
+                            <div class="footer-info-contact"><i class="flaticon-pin"></i><h3>Address</h3><span>A-32, Sector 65, Noida,<br>Uttar Pradesh 201301, India</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lines"><div class="line"></div><div class="line"></div><div class="line"></div></div>
+        </section>
+
+        <div class="copyright-area">
+            <div class="container">
+                <p>&copy; 2026 <strong>Medijunction Smart Healthcare Pvt Ltd.</strong> All rights reserved.</p>
+            </div>
+        </div>
+
+        <div class="go-top"><i class="fa fa-chevron-up"></i><i class="fa fa-chevron-up"></i></div>
+
+        <div class="dark-version">
+            <label id="switch" class="switch">
+                <input type="checkbox" onchange="toggleTheme()" id="slider">
+                <span class="slider round"></span>
+            </label>
+        </div>
+
+        <script src="../assets/js/jquery.min.js"></script>
+        <script src="../assets/js/bootstrap.bundle.min.js"></script>
+        <script src="../assets/js/jquery.meanmenu.js"></script>
+        <script src="../assets/js/jquery.nice-select.min.js"></script>
+        <script src="../assets/js/odometer.min.js"></script>
+        <script src="../assets/js/jquery.appear.js"></script>
+        <script src="../assets/js/datepicker.min.js"></script>
+        <script src="../assets/js/jquery.magnific-popup.min.js"></script>
+        <script src="../assets/js/owl.carousel.min.js"></script>
+		<script src="../assets/js/jquery.ajaxchimp.min.js"></script>
+		<script src="../assets/js/form-validator.min.js"></script>
+		<script src="../assets/js/contact-form-script.js"></script>
+        <script src="../assets/js/main.js"></script>
+    </body>
+</html>
