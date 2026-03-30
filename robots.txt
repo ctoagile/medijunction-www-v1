@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://medijunction.agile.org.in/sitemap.xml
+Sitemap: https://www.medijunction.co.in/sitemap.xml
