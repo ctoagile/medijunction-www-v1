@@ -114,24 +114,32 @@
     text-decoration: underline;
 }
 
-/* Research methodology + partner cards — no stock background image, stable hover */
-.research-card {
+/* Partner / research cards — no stock background image, stable hover.
+   Applied via .research-card class or .partners-section wrapper. */
+.research-card,
+.partners-section .services-item.bg-1 {
     background-image: none !important;
 }
-.research-card:hover::before {
+.research-card:hover::before,
+.partners-section .services-item.bg-1:hover::before {
     opacity: 1 !important;
     background-color: #ffffff !important;
 }
 .research-card:hover h3,
 .research-card:hover p,
-.research-card:hover strong {
+.research-card:hover strong,
+.partners-section .services-item.bg-1:hover h3,
+.partners-section .services-item.bg-1:hover p,
+.partners-section .services-item.bg-1:hover strong {
     color: inherit !important;
 }
-.research-card:hover .icon {
+.research-card:hover .icon,
+.partners-section .services-item.bg-1:hover .icon {
     border-color: #207ef7 !important;
     background-color: #e1e7fb !important;
 }
-.research-card:hover .icon i {
+.research-card:hover .icon i,
+.partners-section .services-item.bg-1:hover .icon i {
     background-color: #eaf7fd !important;
     color: #207ef7 !important;
 }
