@@ -62,3 +62,73 @@
 .footer-quick-links li {
     margin-bottom: 8px;
 }
+
+/* Research programme callout (homepage Programs section, Programs page) */
+.research-callout {
+    margin: 30px 10px 0;
+    padding: 20px 24px;
+    background-color: #fffaf0;
+    border-left: 4px solid #ffc107;
+    border-radius: 5px;
+    max-width: 90%;
+}
+.research-callout .research-tag {
+    display: inline-block;
+    background: #ffc107;
+    color: #4a3a00;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding: 4px 10px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+.research-callout h4 {
+    margin: 12px 0 8px;
+    color: #0f123b;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+.research-callout h4 a {
+    color: #0f123b;
+    text-decoration: none;
+}
+.research-callout h4 a:hover {
+    color: #0046c0;
+}
+.research-callout p {
+    margin: 0 0 10px;
+    color: #555;
+    font-size: 14px;
+    line-height: 1.6;
+}
+.research-callout-link {
+    color: #0046c0;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+}
+.research-callout-link:hover {
+    color: #ff5722;
+    text-decoration: underline;
+}
+
+/* Distinguished MANAS-AI program card on Programs page */
+.research-program-card {
+    background: #fffaf0 !important;
+    border-top: 4px solid #ffc107;
+    margin-top: 20px;
+}
+.research-program-card .research-tag {
+    display: inline-block;
+    background: #ffc107;
+    color: #4a3a00;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding: 4px 10px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
