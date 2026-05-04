@@ -114,32 +114,27 @@
     text-decoration: underline;
 }
 
-/* Partner / research cards — no stock background image, stable hover.
-   Applied via .research-card class or .partners-section wrapper. */
-.research-card,
-.partners-section .services-item.bg-1 {
+/* Site-wide: kill the stock-photo reveal and dark text-flip on services-item
+   card hover. Cards still lift via the inherited transform; the readable
+   white-card-with-coloured-icon look is preserved on hover instead of
+   flipping to white-on-grey. */
+.services-item.bg-1 {
     background-image: none !important;
 }
-.research-card:hover::before,
-.partners-section .services-item.bg-1:hover::before {
+.services-item:hover::before {
     opacity: 1 !important;
     background-color: #ffffff !important;
 }
-.research-card:hover h3,
-.research-card:hover p,
-.research-card:hover strong,
-.partners-section .services-item.bg-1:hover h3,
-.partners-section .services-item.bg-1:hover p,
-.partners-section .services-item.bg-1:hover strong {
+.services-item:hover h3,
+.services-item:hover p,
+.services-item:hover strong {
     color: inherit !important;
 }
-.research-card:hover .icon,
-.partners-section .services-item.bg-1:hover .icon {
+.services-item:hover .icon {
     border-color: #207ef7 !important;
     background-color: #e1e7fb !important;
 }
-.research-card:hover .icon i,
-.partners-section .services-item.bg-1:hover .icon i {
+.services-item:hover .icon i {
     background-color: #eaf7fd !important;
     color: #207ef7 !important;
 }
