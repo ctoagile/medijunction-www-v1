@@ -114,6 +114,28 @@
     text-decoration: underline;
 }
 
+/* Research methodology + partner cards — no stock background image, stable hover */
+.research-card {
+    background-image: none !important;
+}
+.research-card:hover::before {
+    opacity: 1 !important;
+    background-color: #ffffff !important;
+}
+.research-card:hover h3,
+.research-card:hover p,
+.research-card:hover strong {
+    color: inherit !important;
+}
+.research-card:hover .icon {
+    border-color: #207ef7 !important;
+    background-color: #e1e7fb !important;
+}
+.research-card:hover .icon i {
+    background-color: #eaf7fd !important;
+    color: #207ef7 !important;
+}
+
 /* Distinguished MANAS-AI program card on Programs page */
 .research-program-card {
     background: #fffaf0 !important;
